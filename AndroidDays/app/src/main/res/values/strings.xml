@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Day1</string>
-    <string name="hello">Hello World!This is my first project on Android Ever and i`am going enjoy it!</string>
-    <string name="html" translatable="false"><![CDATA[<HTML><TITLE >Title</TITLE></HTML>]]></string>
-    <string name="agreement_full_text">By pressing next button you confirm the agreement and privacy policy</string>
-    <string name="confidential_info">agreement</string>
-    <string name="privacy_policy">privacy policy</string>
-</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="agreement_full_text">"нажимая на кнопку вы подтверждаете что ознакомились с условиями исполнения и политикой конфидециальности"</string>
+    <string name="app_name">День 1</string>
+    <string name="confidential_info">условиями исполнения</string>
+    <string name="hello">Привет Мир.Это первое предложение котороне я написал</string>
+    <string name="privacy_policy">политикой конфидециальности</string>
+</resources>

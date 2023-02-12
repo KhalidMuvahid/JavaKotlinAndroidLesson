@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">يوم اول</string>
-    <string name="hello">مع سلامة  هذا اول مرة كتبت البرنامج</string>
-    <string name="agreement_full_text">من خلال النقر على الزر ، فإنك تؤكد أنك قد قرأت الشروط وسياسة الخصوصية</string>
-    <string name="confidential_info">условиями исполнения</string>
-    <string name="privacy_policy">политикой конфиденциальности</string>
-</resources>
