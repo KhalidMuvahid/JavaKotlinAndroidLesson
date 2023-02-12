@@ -32,30 +32,14 @@ class MainActivity : AppCompatActivity() {
         val privacyPolicy = getString(R.string.privacy_policy)
         val spannableString = SpannableString(fullText)
 
-        val confidentialClickable = object : ClickableSpan() {
-            override fun onClick(widget: View) {
-                Snackbar.make(widget, "Go to link1", Snackbar.LENGTH_LONG)
-                    .setAction("ok", View.OnClickListener { }).show();
-            }
-
-            override fun updateDrawState(ds: TextPaint) {
-                super.updateDrawState(ds)
-                ds.isUnderlineText = true;
-                ds.color = Color.parseColor("#FF2175DC")
-            }
+        val confidentialClickable = MyClickableSpan {
+            Snackbar.make(it, "Go to link1", Snackbar.LENGTH_LONG)
+                .setAction("ok", View.OnClickListener { }).show();
         }
 
-        val policyClickable = object : ClickableSpan() {
-            override fun onClick(widget: View) {
-                Snackbar.make(widget, "Go to link2", Snackbar.LENGTH_LONG)
-                    .setAction("ok", View.OnClickListener { }).show();
-            }
-
-            override fun updateDrawState(ds: TextPaint) {
-                super.updateDrawState(ds)
-                ds.isUnderlineText = true;
-                ds.color = Color.GREEN
-            }
+        val policyClickable = MyClickableSpan{
+            Snackbar.make(it, "Go to link2", Snackbar.LENGTH_LONG)
+                .setAction("ok", View.OnClickListener { }).show();
         }
 
         spannableString.setSpan(
