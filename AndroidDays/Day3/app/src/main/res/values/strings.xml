@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Day3</string>
+    <string name="invalid_email_message">Incorect email address please chexk it out</string>
+    <string name="valid_email_message">Valid email address</string>
+</resources>
