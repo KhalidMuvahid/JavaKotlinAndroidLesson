@@ -2,4 +2,7 @@
     <string name="app_name">Day3</string>
     <string name="invalid_email_message">Incorect email address please chexk it out</string>
     <string name="valid_email_message">Valid email address</string>
+    <string name="privacy_policy">I agree with terms of use and privacy policy</string>
+    <string name="warning">Warning!</string>
+    <string name="warning_message">Some thing go wrong.</string>
 </resources>

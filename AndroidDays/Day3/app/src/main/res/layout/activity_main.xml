@@ -1,39 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:padding="26dp"
+    >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputTextLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+   <LinearLayout
+       android:id="@+id/progress_bar_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone"
+       android:gravity="center">
+
+       <ProgressBar
+           android:id="@+id/progress_bar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="visible" />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="50dp"
-        android:hint="login">
-        <!--android:maxLines="3" textMultiLine-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:hint="login">
+            <!--android:maxLines="3" textMultiLine-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/log_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="26dp"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:text="login" />
+        <CheckBox
+            android:id="@+id/agree_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/privacy_policy" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/log_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login" />
+    </LinearLayout>
+
+
+</FrameLayout>
